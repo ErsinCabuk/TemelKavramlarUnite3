@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Temel Komutlar Unite 3</string>
-    <string name="uyg1_isim">Uygulama 1 (Mantıksal Veri Tipleri)</string>
+    <string name="uyg1">Uygulama 1 (Mantıksal)</string>
     <string name="geri">Geri</string>
-    <string name="uyg2">Uygulama 2 (Tam Sayı Veri Tipleri)</string>
+    <string name="uyg2">Uygulama 2 (Tam Sayı)</string>
+    <string name="uyg3">Uygulama 3 (Char)</string>
 </resources>
