@@ -23,6 +23,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Uyg1Activity"></activity>
+        <activity android:name=".Uyg2Activity"></activity>
     </application>
 
 </manifest>
