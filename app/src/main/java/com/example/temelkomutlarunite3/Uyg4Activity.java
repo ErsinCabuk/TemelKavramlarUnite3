@@ -4,24 +4,33 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Uyg4Activity extends AppCompatActivity {
-    Button btnGeri;
-
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.geri_activity);
 
-        char karakter = 'a';
-        int ascii = (int) karakter;
-        System.out.println("Karakter: " + karakter);
-        System.out.println("ASCII: " + ascii);
+        TextView txtCalistirildi = findViewById(R.id.txtCalistirildi);
 
-        btnGeri = findViewById(R.id.btnGeri);
+        Button btnCalistir = findViewById(R.id.btnCalistir);
+        btnCalistir.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                char karakter = 'a';
+                int ascii = (int) karakter;
+                System.out.println("Karakter: " + karakter);
+                System.out.println("ASCII: " + ascii);
+
+                txtCalistirildi.setVisibility(View.VISIBLE);
+            }
+        });
+
+        Button btnGeri = findViewById(R.id.btnGeri);
         btnGeri.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

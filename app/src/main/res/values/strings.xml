@@ -6,4 +6,6 @@
     <string name="uyg4">Uygulama 4 (ASCII)</string>
     <string name="uyg5">Uygulama 5 (Ondalık Sayılar)</string>
     <string name="geri">Geri</string>
+    <string name="txtCalistirildi">Çalıştırıldı</string>
+    <string name="btnCalistir">Çalıştır</string>
 </resources>
