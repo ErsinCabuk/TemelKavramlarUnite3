@@ -14,7 +14,7 @@ public class Uyg5Activity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.geri_activity);
+        setContentView(R.layout.uygulama_activity);
 
         TextView txtCalistirildi = findViewById(R.id.txtCalistirildi);
 
