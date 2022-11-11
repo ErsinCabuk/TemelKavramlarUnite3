@@ -14,7 +14,7 @@ public class Uyg1Activity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.uyg1_activity);
+        setContentView(R.layout.geri_activity);
 
         boolean d1 = true;
         System.out.println("1. Değişken Değeri: " + d1);

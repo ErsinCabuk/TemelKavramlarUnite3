@@ -13,7 +13,7 @@ public class Uyg2Activity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.uyg2_activity);
+        setContentView(R.layout.geri_activity);
 
         byte kucukSayi = 127;
         short kisaSayi = 32767;

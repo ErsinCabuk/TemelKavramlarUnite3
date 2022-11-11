@@ -8,27 +8,25 @@ import android.widget.Button;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Uyg3Activity extends AppCompatActivity {
+public class Uyg5Activity extends AppCompatActivity {
 
     Button btnGeri;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.geri_activity);
-        char karakter = 'A';
-        System.out.println("Karakter: " + karakter);
 
-        karakter = 'A' + 1;
-        System.out.println("Yeni Karakter: " + karakter);
-
-        karakter = 'A' + 32;
-        System.out.println("Yeni Karakterin Yeni Karakteri: " + karakter);
+        float o1 = 1f/3f;
+        double o2 = 1d/3d;
+        System.out.println("Float Sayı: " + o1);
+        System.out.println("Ondalık Sayı: " + o2);
 
         btnGeri = findViewById(R.id.btnGeri);
         btnGeri.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent main = new Intent(Uyg3Activity.this, MainActivity.class);
+                Intent main = new Intent(Uyg5Activity.this, MainActivity.class);
                 startActivity(main);
             }
         });

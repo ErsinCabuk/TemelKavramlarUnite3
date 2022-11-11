@@ -9,9 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnUyg1;
-    Button btnUyg2;
-    Button btnUyg3;
+    Button btnUyg1, btnUyg2, btnUyg3, btnUyg4, btnUyg5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +40,24 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent uyg3 = new Intent(MainActivity.this, Uyg3Activity.class);
                 startActivity(uyg3);
+            }
+        });
+
+        btnUyg4 = findViewById(R.id.btnUyg4);
+        btnUyg4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent uyg4 = new Intent(MainActivity.this, Uyg4Activity.class);
+                startActivity(uyg4);
+            }
+        });
+
+        btnUyg5 = findViewById(R.id.btnUyg5);
+        btnUyg5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent uyg5 = new Intent(MainActivity.this, Uyg5Activity.class);
+                startActivity(uyg5);
             }
         });
     }
