@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnUyg1, btnUyg2, btnUyg3, btnUyg4, btnUyg5;
+    Button btnUyg1, btnUyg2, btnUyg3, btnUyg4, btnUyg5, btnUyg6, btnUyg7, btnUyg8, btnUyg9;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,8 +20,8 @@ public class MainActivity extends AppCompatActivity {
         btnUyg1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent uyg1 = new Intent(MainActivity.this, Uyg1Activity.class);
-                startActivity(uyg1);
+                Intent uyg = new Intent(MainActivity.this, Uyg1Activity.class);
+                startActivity(uyg);
             }
         });
 
@@ -29,8 +29,8 @@ public class MainActivity extends AppCompatActivity {
         btnUyg2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent uyg2 = new Intent(MainActivity.this, Uyg2Activity.class);
-                startActivity(uyg2);
+                Intent uyg = new Intent(MainActivity.this, Uyg2Activity.class);
+                startActivity(uyg);
             }
         });
 
@@ -38,8 +38,8 @@ public class MainActivity extends AppCompatActivity {
         btnUyg3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent uyg3 = new Intent(MainActivity.this, Uyg3Activity.class);
-                startActivity(uyg3);
+                Intent uyg = new Intent(MainActivity.this, Uyg3Activity.class);
+                startActivity(uyg);
             }
         });
 
@@ -47,8 +47,8 @@ public class MainActivity extends AppCompatActivity {
         btnUyg4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent uyg4 = new Intent(MainActivity.this, Uyg4Activity.class);
-                startActivity(uyg4);
+                Intent uyg = new Intent(MainActivity.this, Uyg4Activity.class);
+                startActivity(uyg);
             }
         });
 
@@ -56,8 +56,44 @@ public class MainActivity extends AppCompatActivity {
         btnUyg5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent uyg5 = new Intent(MainActivity.this, Uyg5Activity.class);
-                startActivity(uyg5);
+                Intent uyg = new Intent(MainActivity.this, Uyg5Activity.class);
+                startActivity(uyg);
+            }
+        });
+
+        btnUyg6 = findViewById(R.id.btnUyg6);
+        btnUyg6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent uyg = new Intent(MainActivity.this, Uyg6Activity.class);
+                startActivity(uyg);
+            }
+        });
+
+        btnUyg7 = findViewById(R.id.btnUyg7);
+        btnUyg7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent uyg = new Intent(MainActivity.this, Uyg7Activity.class);
+                startActivity(uyg);
+            }
+        });
+
+        btnUyg8 = findViewById(R.id.btnUyg8);
+        btnUyg8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent uyg = new Intent(MainActivity.this, Uyg8Activity.class);
+                startActivity(uyg);
+            }
+        });
+
+        btnUyg9 = findViewById(R.id.btnUyg9);
+        btnUyg9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent uyg = new Intent(MainActivity.this, Uyg9Activity.class);
+                startActivity(uyg);
             }
         });
     }

@@ -9,9 +9,7 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Uyg1Activity extends AppCompatActivity {
-
-
+public class Uyg6Activity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,20 +21,22 @@ public class Uyg1Activity extends AppCompatActivity {
         btnCalistir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                boolean d1 = true;
-                System.out.println("1. Değişken Değeri: " + d1);
+                final int PI = 3;
+                int yariCap = 5;
+                System.out.println("Çevre: " + (2 * PI * yariCap));
 
                 txtCalistirildi.setVisibility(View.VISIBLE);
             }
         });
-        
+
         Button btnGeri = findViewById(R.id.btnGeri);
         btnGeri.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent main = new Intent(Uyg1Activity.this, MainActivity.class);
+                Intent main = new Intent(Uyg6Activity.this, MainActivity.class);
                 startActivity(main);
             }
         });
+
     }
 }
