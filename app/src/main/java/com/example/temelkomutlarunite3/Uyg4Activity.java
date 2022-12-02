@@ -23,10 +23,7 @@ public class Uyg4Activity extends AppCompatActivity {
             public void onClick(View view) {
                 char karakter = 'a';
                 int ascii = (int) karakter;
-                System.out.println("Karakter: " + karakter);
-                System.out.println("ASCII: " + ascii);
-
-                txtCalistirildi.setVisibility(View.VISIBLE);
+                txtCalistirildi.setText("Karakter: " + karakter + "\nASCII: " + ascii);
             }
         });
 

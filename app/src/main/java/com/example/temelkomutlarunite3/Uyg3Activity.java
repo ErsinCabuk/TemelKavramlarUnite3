@@ -22,15 +22,13 @@ public class Uyg3Activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 char karakter = 'A';
-                System.out.println("Karakter: " + karakter);
+                txtCalistirildi.setText("Karakter: " + karakter);
 
                 karakter = 'A' + 1;
-                System.out.println("Yeni Karakter: " + karakter);
+                txtCalistirildi.setText(txtCalistirildi.getText().toString() + "\nYeni Karakter: " + karakter);
 
                 karakter = 'A' + 32;
-                System.out.println("Yeni Karakterin Yeni Karakteri: " + karakter);
-
-                txtCalistirildi.setVisibility(View.VISIBLE);
+                txtCalistirildi.setText(txtCalistirildi.getText().toString() + "\nYeni Karakterin Yeni Karakteri: " + karakter);
             }
         });
 

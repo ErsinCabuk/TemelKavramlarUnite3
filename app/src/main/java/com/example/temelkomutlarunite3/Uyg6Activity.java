@@ -23,9 +23,7 @@ public class Uyg6Activity extends AppCompatActivity {
             public void onClick(View view) {
                 final int PI = 3;
                 int yariCap = 5;
-                System.out.println("Çevre: " + (2 * PI * yariCap));
-
-                txtCalistirildi.setVisibility(View.VISIBLE);
+                txtCalistirildi.setText("Çevre: " + (2 * PI * yariCap));
             }
         });
 

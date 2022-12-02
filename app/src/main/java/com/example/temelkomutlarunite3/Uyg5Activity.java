@@ -24,10 +24,7 @@ public class Uyg5Activity extends AppCompatActivity {
             public void onClick(View view) {
                 float o1 = 1f/3f;
                 double o2 = 1d/3d;
-                System.out.println("Float Sayı: " + o1);
-                System.out.println("Ondalık Sayı: " + o2);
-
-                txtCalistirildi.setVisibility(View.VISIBLE);
+                txtCalistirildi.setText("Float Sayı: " + o1 + "\nOndalık Sayı: " + o2);
             }
         });
 
