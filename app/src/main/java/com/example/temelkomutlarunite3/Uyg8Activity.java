@@ -28,15 +28,15 @@ public class Uyg8Activity extends AppCompatActivity {
 
                 textCalistir.setText("x = " + sayi);
                 sayi += 3;
-                textCalistir.setText(textCalistir.getText().toString() + "\n x += 3: " +  sayi);
+                textCalistir.setText(textCalistir.getText().toString() + "\nx += 3: " +  sayi);
                 sayi -= 2;
-                textCalistir.setText(textCalistir.getText().toString() + "\n x -= 2: " +  sayi);
+                textCalistir.setText(textCalistir.getText().toString() + "\nx -= 2: " +  sayi);
                 sayi *= 2;
-                textCalistir.setText(textCalistir.getText().toString() + "\n x *= 2: " +  sayi);
+                textCalistir.setText(textCalistir.getText().toString() + "\nx *= 2: " +  sayi);
                 sayi /= 4;
-                textCalistir.setText(textCalistir.getText().toString() + "\n x /= 4: " +  sayi);
+                textCalistir.setText(textCalistir.getText().toString() + "\nx /= 4: " +  sayi);
                 sayi %= 2;
-                textCalistir.setText(textCalistir.getText().toString() + "\n x %= 2: " +  sayi);
+                textCalistir.setText(textCalistir.getText().toString() + "\nx %= 2: " +  sayi);
             }
         });
 
