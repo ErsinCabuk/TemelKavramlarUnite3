@@ -9,7 +9,7 @@ import android.widget.EditText;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Uyg9Activity extends AppCompatActivity {
+public class Uyg10Activity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,19 +25,17 @@ public class Uyg9Activity extends AppCompatActivity {
             public void onClick(View view) {
                 int sayi1 = Integer.parseInt(editSayi1.getText().toString());
                 int sayi2 = Integer.parseInt(editSayi2.getText().toString());
-                System.out.println("Sayı 1 ile Sayi 2 eşit mi: " + (sayi1 == sayi2));
-                System.out.println("Sayı 1 ile Sayi 2 farklı mı: " + (sayi1 != sayi2));
-                System.out.println("Sayı 1, Sayi 2’den büyük mü: " + (sayi1 > sayi2));
-                System.out.println("Sayı 1, Sayi 2’den küçük mü:  " + (sayi1 < sayi2));
-                System.out.println("Sayı 1, Sayi 2’den büyük veya eşit mi: " + (sayi1 >= sayi2));
-                System.out.println("Sayı 1, Sayi 2’den küçük veya eşit mi: " + (sayi1 <= sayi2));
+                System.out.println("Sayı 1 10’dan büyük ve Sayı 2 10’dan küçük mü: " + (sayi1 > 20 && sayi2 < 20));
+                System.out.println("Sayı 1 10’dan büyük ve Sayı 2 10’dan küçük mü tersi: " + !(sayi1 > 20 && sayi2 < 20));
+                System.out.println("Sayı 1 10’dan büyük veya Sayı 2 10’dan küçük mü: " + (sayi1 > 20 || sayi2 < 20));
+                System.out.println("Sayı 1 10’dan büyük veya Sayı 2 10’dan küçük mü tersi: " + !(sayi1 > 20 || sayi2 < 20));
             }
         });
 
         btnGeri.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent main = new Intent(Uyg9Activity.this, MainActivity.class);
+                Intent main = new Intent(Uyg10Activity.this, MainActivity.class);
                 startActivity(main);
             }
         });
