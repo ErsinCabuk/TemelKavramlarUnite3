@@ -24,9 +24,8 @@ public class Uyg1Activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 boolean d1 = true;
-                System.out.println("1. Değişken Değeri: " + d1);
 
-                txtCalistirildi.setVisibility(View.VISIBLE);
+                txtCalistirildi.setText("1. Değişken Değeri: " + d1);
             }
         });
         

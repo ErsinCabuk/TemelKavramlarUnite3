@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -18,22 +19,24 @@ public class Uyg8Activity extends AppCompatActivity {
         EditText editSayi = findViewById(R.id.editSayi);
         Button btnHesapla = findViewById(R.id.btnHesapla);
         Button btnGeri = findViewById(R.id.btnGeri);
+        TextView textCalistir = findViewById(R.id.textCalistir);
 
         btnHesapla.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 int sayi = Integer.parseInt(editSayi.getText().toString());
-                System.out.println("x = " + sayi);
+
+                textCalistir.setText("x = " + sayi);
                 sayi += 3;
-                System.out.println("x += 3 : " + sayi);
+                textCalistir.setText(textCalistir.getText().toString() + "\n x += 3: " +  sayi);
                 sayi -= 2;
-                System.out.println("x -= 2 : " + sayi);
+                textCalistir.setText(textCalistir.getText().toString() + "\n x -= 2: " +  sayi);
                 sayi *= 2;
-                System.out.println("x *= 2 : " + sayi);
+                textCalistir.setText(textCalistir.getText().toString() + "\n x *= 2: " +  sayi);
                 sayi /= 4;
-                System.out.println("x /= 4 : " + sayi);
+                textCalistir.setText(textCalistir.getText().toString() + "\n x /= 4: " +  sayi);
                 sayi %= 2;
-                System.out.println("x %= 2 : " + sayi);
+                textCalistir.setText(textCalistir.getText().toString() + "\n x %= 2: " +  sayi);
             }
         });
 
