@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnUyg1, btnUyg2, btnUyg3, btnUyg4, btnUyg5, btnUyg6, btnUyg7, btnUyg8, btnUyg9, btnUyg10, btnUyg11;
+    Button btnUyg1, btnUyg2, btnUyg3, btnUyg4, btnUyg5, btnUyg6, btnUyg7, btnUyg8, btnUyg9, btnUyg10, btnUyg11, btnUyg12;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -110,6 +110,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent uyg = new Intent(MainActivity.this, Uyg11Activity.class);
+                startActivity(uyg);
+            }
+        });
+
+        btnUyg12 = findViewById(R.id.btnUyg12);
+        btnUyg12.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent uyg = new Intent(MainActivity.this, Uyg12Activity.class);
                 startActivity(uyg);
             }
         });

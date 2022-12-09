@@ -33,7 +33,7 @@
         <activity android:name=".Uyg9Activity" android:label="@string/uyg9"></activity>
         <activity android:name=".Uyg10Activity" android:label="@string/uyg10"></activity>
         <activity android:name=".Uyg11Activity" android:label="@string/uyg11"></activity>
-
+        <activity android:name=".Uyg12Activity" android:label="@string/uyg12"></activity>
     </application>
 
 </manifest>
